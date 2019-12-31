@@ -3,6 +3,7 @@ import axios from 'axios'
 import SearchBar from './Components/SearchBar'
 import SearchResults from './Components/SearchResults'
 import Loading from './Components/Loading'
+import Home from './Components/Home'
 
 class App extends React.Component {
   // setup state
@@ -118,7 +119,8 @@ class App extends React.Component {
 
     return (
       <div>
-        {loading ? <Loading></Loading> : null}
+        <Loading loading={loading} data-testid='loading'></Loading>
+        {!haserror && artists.length ? null : <Home></Home>}
         <SearchBar
           haserror={haserror}
           searchterm={searchterm}

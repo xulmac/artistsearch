@@ -2,7 +2,7 @@ import React from 'react'
 
 const ArtistCard = props => {
   return (
-    <div className='artistCard'>
+    <div className='artistCard' data-testid='artistCard'>
       {!props.haserror ? (
         <ul>
           {props.artists.map(artist => (

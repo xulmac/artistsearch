@@ -4,7 +4,7 @@ import EventCard from './EventCard'
 
 const SearchResults = props => {
   return (
-    <div className='searchResults'>
+    <div className='searchResults' data-testid='searchResults'>
       {!props.haserror ? (
         <button
           className='back'
@@ -26,9 +26,14 @@ const SearchResults = props => {
         </h2>
       ) : null}
       {!props.haserror ? (
-        <ArtistCard artists={props.artists}></ArtistCard>
+        <ArtistCard
+          artists={props.artists}
+          data-testid='artistCard'
+        ></ArtistCard>
       ) : null}
-      {!props.haserror ? <EventCard events={props.events}></EventCard> : null}
+      {!props.haserror ? (
+        <EventCard events={props.events} data-testid='eventCard'></EventCard>
+      ) : null}
     </div>
   )
 }

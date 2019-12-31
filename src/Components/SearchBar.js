@@ -1,17 +1,16 @@
 import React from 'react'
-import Home from './Home'
 import Error from './Error'
 
 const SearchBar = props => {
   return (
-    <div className='searchBar'>
+    <div className='searchBar' data-testid='searchBar'>
       {props.haserror ? (
         <Error
           searchterm={props.searchterm}
           startOver={props.startOver}
         ></Error>
       ) : null}
-      {!props.haserror && props.artists.length ? null : <Home></Home>}
+
       <form onSubmit={props.searchArtists}>
         <input
           type='search'

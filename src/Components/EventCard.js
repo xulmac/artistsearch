@@ -7,7 +7,7 @@ import 'simplebar/dist/simplebar.min.css'
 const EventCard = props => {
   let directionsUrl = 'https://www.google.com/maps/dir/'
   return (
-    <SimpleBar autoHide='false' className='eventCard'>
+    <SimpleBar autoHide='false' className='eventCard' data-testid='eventCard'>
       {!props.haserror ? (
         <ul>
           {props.events.map(event => (
