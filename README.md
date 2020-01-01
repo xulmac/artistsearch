@@ -13,7 +13,7 @@
 # Deploy
 
 - Run `npm run-script build`
-- Copy / FTP / SSH everything from build folder to your remote server’s root dir. Depending on the type of server it is mostly /www or /public_html for services such as Heroku, Google Cloud, AWS refer to their documentation. As this is a static build there are no server side / remote dependencies.
+- Copy / FTP / SSH everything from build folder to your remote server’s root dir. For services such as Heroku, Google Cloud, AWS refer to their documentation. As this is a static build there are no server side / remote dependencies.
 
 # Architecture
 
@@ -23,21 +23,21 @@ The architecture was determined by the time that I had and scale of the app. The
 
 A list of code challenge requirements that have been met:
 
-- Show results based on the input of the artist’s name DONE
-- Artist Name DONE
-- Artist Picture DONE
-- Artist Facebook URL DONE
-- Artist Events DONE
-- Event Venue DONE
-- Event City DONE
-- Event Country DONE
-- Event Date DONE
-- Unit tests of your JS code PARTLY DONE (Integration/render test for SearchBar only)
-- Styling DONE
+- Show results based on the input of the artist’s name **_DONE_**
+- Artist Name **_DONE_**
+- Artist Picture **_DONE_**
+- Artist Facebook URL **_DONE_**
+- Artist Events **_DONE_**
+- Event Venue **_DONE_**
+- Event City **_DONE_**
+- Event Country **_DONE_**
+- Event Date **_DONE_**
+- Unit tests of your JS code PARTLY **_DONE_** (Integration/render test for SearchBar only)
+- Styling **_DONE_**
 
 # Bonus Features
 
-- Cache - Persist the last entered artist and events across browser reloads/refreshes DONE
+- Cache - Persist the last entered artist and events across browser reloads/refreshes **_DONE_**
 - Creative? - Think of a cool feature?
 
   - Linked venue directions to google maps
@@ -46,8 +46,4 @@ A list of code challenge requirements that have been met:
   - Human readable date and time format
   - Total event count added for each artist
 
-- Deploy - Include a deploy strategy for your app. DONE (as already stated above)
-
-# Progressive Web App
-
-While the service worker is registered, offline usage would not make sense in this particular app, since data is being fetched over HTTP.
+- Deploy - Include a deploy strategy for your app. **_DONE (as already stated above)_**
