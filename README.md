@@ -1,3 +1,6 @@
+# Intro
+This is a interview assigment for a company called KeepTruckin, and no I did not get the job :)
+
 # Install
 
 - Clone or download the repository
